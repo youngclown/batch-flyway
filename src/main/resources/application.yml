@@ -1,0 +1,23 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/xxxx
+    user:
+    password:
+    driver-class-name: org.mariadb.jdbc.Driver
+    validation-query: SELECT 1
+    test-on-borrow: true
+    hikari:
+      idle-timeout: 30000
+      maximum-pool-size: 10
+      minimum-idle: 3
+      pool-name: SpringBootJPAHikariCP
+  flyway:
+    baselineOnMigrate: true
+    schemas: xxxx
+    locations: classpath:db/migration,classpath:db/callback
+    url: jdbc:mysql://127.0.0.1:3306/xxxx
+    user:
+    password:
+    out-of-order: true

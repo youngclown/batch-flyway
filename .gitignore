@@ -1,0 +1,43 @@
+.java-version
+.gradle
+**/build/
+**/out/
+**/bin/
+
+!**/src/main/**/build/
+!**/src/test/**/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+## generated ##
+**/src/main/generated/
+
+.history
+/api-admin/src/main/generated/
+/batch-onesignal-sync/src/main/generated/
+/batch-exposure/src/main/generated/
+/batch-simple-worker/src/main/generated/
+
+
